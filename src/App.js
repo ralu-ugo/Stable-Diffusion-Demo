@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import rocks from './images/creps.png'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class= "landing">
+      <h1 class ="title">
+        Stable Diffusion 🚀
+      </h1>
+      <p>This react application leverages the model trained by Stability AI and Runway ML
+        to generate images using the Stable Diffusion Deep Learning model.
+        The model can be found via github here Github Repo.
+      </p>
+      <div class= "input-area">
+        <input type= "text" placeholder= "Search for an image"></input><button>Generate</button>
+      </div>
+      <img src={rocks} alt="img" />
+
+
+
+
+
+
+
     </div>
   );
 }
