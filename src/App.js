@@ -7,10 +7,7 @@ function App() {
       <h1 class ="title">
         Stable Diffusion 🚀
       </h1>
-      <p>This react application leverages the model trained by Stability AI and Runway ML
-        to generate images using the Stable Diffusion Deep Learning model.
-        The model can be found via github here Github Repo.
-      </p>
+      <p>Type in a full descriptive sentence, as if you were writing a caption for a photo. Include as much detail as you see fit, including colors, styles, and emotions. Then click Generate to get your image.</p>
       <div class= "input-area">
         <input type= "text" placeholder= "Search for an image"></input><button>Generate</button>
       </div>
