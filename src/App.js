@@ -9,7 +9,7 @@ function App() {
   const engineId = "stable-diffusion-v1-5";
   const apiHost = "https://api.stability.ai";
   const url = `${apiHost}/v1alpha/generation/${engineId}/text-to-image`;
-  const apiKey = "sk-3jLIoGfIPGWso3LpFF8Z0MlxepTSQ036BtkBTfJxIiqqWsw6";
+  const apiKey = "sk-MnNX05YvL3g65Fa9K2YLMmhlfALIVORvIncs5nxYhoQyaSHs";
   if (!apiKey) throw new Error("Missing Stability API key.");
   const getResponse = async () => {
     setloading(true);
