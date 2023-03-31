@@ -1,8 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@1,300&display=swap');
+
 *{
-  text-align: justify;
+  /* text-align: justify; */
   /* width: 500px; */
   /* padding: 24px; */
   /* margin: 0px 72px 0px 72px; */
+}
+
+body{
+  margin: 16px;
+  background-color: #1e1e1e;
+  color: whitesmoke;
+  font-family: 'Bellota Text', cursive;
 }
 
 .landing{
@@ -13,7 +24,20 @@
 .title{
   margin-top: 24px;
   margin-left: 250px;
-  font-size: 54px;
+  font-size: 108px;
+  font-family: 'Londrina Shadow', cursive;
+}
+
+/* .body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* background-color: #fff; */
+
+
+.desc{
+  font-size: 40px;
+  width: 50%;
 }
 
 .input-area{
@@ -22,7 +46,11 @@
   /* justify-content: space-between; */
   align-items: center;
   margin-left: 250px;
+}
 
+.top{
+  display: flex;
+  justify-content: space-between;
 }
 
 
@@ -36,8 +64,9 @@ p{
 input{
   width: 400px;
   padding: 8px;
+  background-color: transparent;
   border-radius: 8px;
-  border-color:#c4c4c43e;
+  border-color:#ffff;
 
 }
 
@@ -59,4 +88,11 @@ img{
   margin-left: 250px;
 
 
+}
+
+button{
+  background-color: transparent;
+  color: whitesmoke;
+  border: 1px solid white;
+  margin-left: 12px;
 }
