@@ -2,12 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@1,300&display=swap');
 
-*{
-  /* text-align: justify; */
-  /* width: 500px; */
-  /* padding: 24px; */
-  /* margin: 0px 72px 0px 72px; */
-}
 
 body{
   margin: 16px;
@@ -67,6 +61,7 @@ input{
   background-color: transparent;
   border-radius: 8px;
   border-color:#ffff;
+  color: white;
 
 }
 

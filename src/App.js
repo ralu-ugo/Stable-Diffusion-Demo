@@ -48,7 +48,6 @@ function App() {
           <h1 class ="title">
             Stable Diffusion
           </h1>
-          <h1></h1>
         </div>
       </div>
       <div class="body">
@@ -76,7 +75,13 @@ function App() {
             alt={inputValue}
             style={{ width: "512px", height: "512px" }}
           />) : (
-            ""
+            loading ? (
+              <img
+            src={require("./images/loading.gif")}
+            alt={"Loading"}
+            style={{ width: "512px", height: "512px" }}
+          />
+            ) : ""
           )}
       </div>
     </body>
