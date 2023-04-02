@@ -77,12 +77,12 @@ function App() {
           />) : (
             loading ? (
               <img
-            src={require("./images/loading.gif")}
+            src={require("./images/rainbow.gif")}
             alt={"Loading"}
             style={{ width: "512px", height: "512px" }}
           />
             ) : ""
-          )}
+        )}
       </div>
     </body>
     );
