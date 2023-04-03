@@ -4,7 +4,7 @@
 
 
 body{
-  margin: 16px;
+  /* margin: 16px; */
   background-color: #1e1e1e;
   color: whitesmoke;
   font-family: 'Bellota Text', cursive;
@@ -29,7 +29,7 @@ body{
 
 .desc{
   margin-top: 32px;
-  margin-left: 250px;
+  margin-left: 0px;
   font-size: 40px;
   /* width: 50%; */
 }
@@ -39,7 +39,7 @@ body{
   flex-wrap:wrap;
   /* justify-content: space-between; */
   align-items: center;
-  margin-left: 250px;
+  margin-left: 0px;
 }
 
 .top{
