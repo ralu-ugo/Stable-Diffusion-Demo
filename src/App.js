@@ -62,7 +62,7 @@ function App() {
                 {loading ? "Loading..." : "Generate"}
               </submit>
           </div>
-          <p className='desc'>Type in a full descriptive sentence, as if you were writing a caption for a photo. Include as much detail as you see fit, including colors, styles, and emotions. Then click Generate to get your image.</p>
+          <p className='desc'>Type in a full descriptive sentence, as if you were writing a caption for a photo. Include as much detail as you see fit, including colors, styles, and emotions. Then click Generate to get your image. </p>
         </div>
 
         <div className='img'>
@@ -71,7 +71,7 @@ function App() {
               src={`data:image/png;base64,
             ${imageUrl.artifacts[0].base64}`}
               alt={inputValue}
-              style={{ width: "512px", height: "512px" }}
+              style={{ width: "512px", height: "512px", boxShadow: "3px 3px 6px black" }}
             />) : (
               loading ? (
                 <img
