@@ -51,39 +51,41 @@ function App() {
         </div>
       </div>
       <div class="body">
-        <p className='desc'>Type in a full descriptive sentence, as if you were writing a caption for a photo. Include as much detail as you see fit, including colors, styles, and emotions. Then click Generate to get your image.</p>
-        <div className='input-area'>
-          <input
-            type="text"
-            onChange={(e) => setinputValue(e.target.value)}
-            value={inputValue}
+        <div>
+          <div className='input-area'>
+              <input
+                type="text"
+                onChange={(e) => setinputValue(e.target.value)}
+                value={inputValue}
+                />
+              <button onClick={getResponse}>
+                {loading ? "Loading..." : "Generate"}
+              </button>
+          </div>
+          <p className='desc'>Type in a full descriptive sentence, as if you were writing a caption for a photo. Include as much detail as you see fit, including colors, styles, and emotions. Then click Generate to get your image.</p>
+        </div>
+
+        <div className='img'>
+          {imageUrl ? (
+            <img
+              src={`data:image/png;base64,
+            ${imageUrl.artifacts[0].base64}`}
+              alt={inputValue}
+              style={{ width: "512px", height: "512px" }}
+            />) : (
+              loading ? (
+                <img
+              src={require("./images/rainbow.gif")}
+              alt={"Loading"}
+              style={{ width: "512px", height: "512px" }}
             />
-          <button onClick={getResponse}>
-            {loading ? "Loading..." : "Generate"}
-          </button>
+              ) : ""
+          )}
         </div>
       </div>
 
-
       {/* <div>Image Container</div> */}
 
-      <div className='img'>
-        {imageUrl ? (
-          <img
-            src={`data:image/png;base64,
-          ${imageUrl.artifacts[0].base64}`}
-            alt={inputValue}
-            style={{ width: "512px", height: "512px" }}
-          />) : (
-            loading ? (
-              <img
-            src={require("./images/rainbow.gif")}
-            alt={"Loading"}
-            style={{ width: "512px", height: "512px" }}
-          />
-            ) : ""
-        )}
-      </div>
     </body>
     );
 }

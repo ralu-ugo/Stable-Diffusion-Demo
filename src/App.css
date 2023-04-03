@@ -22,16 +22,15 @@ body{
   font-family: 'Londrina Shadow', cursive;
 }
 
-/* .body{
+.body{
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  /* background-color: #fff; */
-
+  justify-content: space-around;
+}
 
 .desc{
-  font-size: 40px;
-  width: 50%;
+  margin-top: 32px;
+  font-size: 50px;
+  /* width: 50%; */
 }
 
 .input-area{
