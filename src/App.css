@@ -24,12 +24,13 @@ body{
 
 .body{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .desc{
   margin-top: 32px;
-  font-size: 50px;
+  margin-left: 250px;
+  font-size: 40px;
   /* width: 50%; */
 }
 
@@ -64,13 +65,6 @@ input{
 
 }
 
-button{
-  padding: 8px;
-  background-color:gold;
-  border-radius: 8px;
-  border: 0.5px;
-
-}
 
 img{
   display: inline-block;
@@ -84,7 +78,10 @@ img{
 
 }
 
-button{
+.button{
+  padding: 8px;
+  border-radius: 8px;
+  border: 0.5px;
   background-color: transparent;
   color: whitesmoke;
   border: 1px solid white;

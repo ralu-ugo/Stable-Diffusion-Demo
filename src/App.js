@@ -58,9 +58,9 @@ function App() {
                 onChange={(e) => setinputValue(e.target.value)}
                 value={inputValue}
                 />
-              <button onClick={getResponse}>
+              <submit className="button" onClick={getResponse}>
                 {loading ? "Loading..." : "Generate"}
-              </button>
+              </submit>
           </div>
           <p className='desc'>Type in a full descriptive sentence, as if you were writing a caption for a photo. Include as much detail as you see fit, including colors, styles, and emotions. Then click Generate to get your image.</p>
         </div>
