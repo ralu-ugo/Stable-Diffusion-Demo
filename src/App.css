@@ -3,17 +3,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@1,300&display=swap');
 
 
-body{
-  /* margin: 16px; */
+.dark {
   background-color: #100F0F;
-  /* background-color: whitesmoke; */
   color: whitesmoke;
   font-family: 'Bellota Text', cursive;
+  padding: 2% 2% 15% 2%;
+
 }
 
-.landing{
-  display: grid;
-  /* margin-left: 72px; */
+.light {
+  background-color: white;
+  color: #100F0F;
+  font-family: 'Bellota Text', cursive;
+  padding: 2% 2% 15% 2%;
+  /* overflow-y:hidden; */
+
+}
+
+.top{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 .title{
@@ -60,13 +70,24 @@ p{
 
 }
 
-input{
+.dark input{
   width: 400px;
   padding: 16px;
   background-color: transparent;
   border-radius: 8px;
   border-color:#ffff;
   color: white;
+
+}
+
+
+.light input{
+  width: 400px;
+  padding: 16px;
+  background-color: transparent;
+  border-radius: 8px;
+  border-color:#100f0f95;
+  color:#100F0F;
 
 }
 
@@ -81,7 +102,7 @@ img{
 
 }
 
-.button{
+.dark button{
   padding: 16px;
   border-radius: 8px;
   border: 0.5px;
@@ -91,7 +112,13 @@ img{
   margin-left: 12px;
 }
 
-span{
-  font-size: 108px;
-  line-height: 1;
+
+.light button {
+  padding: 16px;
+  border-radius: 8px;
+  border: 0.5px;
+  background-color: transparent;
+  color:#100F0F;
+  border: 1px solid #100F0F;
+  margin-left: 12px;
 }
