@@ -59,7 +59,10 @@ function App() {
       <div className={theme}>
         <div className="top">
             <h1 className ="title">Stable Diffusion</h1>
-            <button style={{marginLeft: "24px"}} onClick={toggleTheme}></button>
+            <label className="switch" style={{marginLeft: "24px"}} onChange={toggleTheme}>
+              <input type="checkbox"/>
+              <span class="slider round"></span>
+            </label>
         </div>
         <div className="body">
           <div>
