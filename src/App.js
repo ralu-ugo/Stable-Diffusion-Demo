@@ -19,10 +19,7 @@ function App() {
   const toggleTheme = () => {
     setTheme((curr) => (curr === "dark" ? "light" : "dark"))
   }
-  // useEffect(() => {
-  //   document.body.classList.remove('darkmode')
-    // document.body.classList.add('lightmode', theme === 'light');
-  // }, [theme]);
+
   if (!apiKey) throw new Error("Missing Stability API key.");
   const getResponse = async () => {
     setloading(true);
@@ -68,7 +65,8 @@ function App() {
           <div>
             <div className='input-area'>
                 <input
-                  className={theme}
+                  className= {theme}
+                  id= "input"
                   type="text"
                   onChange={(e) => setinputValue(e.target.value)}
                   value={inputValue}
