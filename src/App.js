@@ -54,10 +54,12 @@ function App() {
   return (
     <ThemeContext.Provider value={{theme, toggleTheme}}  >
       <div className={theme}>
-        <label className="switch" style={{marginLeft: "24px"}} onChange={toggleTheme}>
-          <input type="checkbox"/>
-          <span class="slider round"></span>
-        </label>
+        <div className="top">
+          <label className="switch" style={{marginLeft: "24px"}} onChange={toggleTheme}>
+            <input type="checkbox"/>
+            <span class="slider round"></span>
+          </label>
+        </div>
         <div className="body">
           <div className="left">
               <h1 className ="title">Stable Diffusion</h1>
@@ -82,7 +84,7 @@ function App() {
                   src={`data:image/png;base64,
                 ${imageUrl.artifacts[0].base64}`}
                   alt={inputValue}
-                  style={{ width: "512px", height: "512px", boxShadow: "3px 3px 6px black" }}
+                  style={{ boxShadow: "3px 3px 6px black" }}
                 />) : (
                   loading ? (
                     <img
