@@ -8,7 +8,7 @@
   color: whitesmoke;
   font-family: 'Chivo Mono', monospace;
   font-size: 12px;
-  padding: 2% 2% 15% 2%;
+  padding: 2% 2% 25% 2%;
 
 }
 
@@ -17,36 +17,37 @@
   color: #100F0F;
   font-family: 'Chivo Mono', monospace;
   font-size: 12px;
-  padding: 2% 2% 15% 2%;
+  padding: 2% 2% 25% 2%;
   /* overflow-y:hidden; */
 
 }
 
-.top{
+.left{
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 
 .title{
   margin-top: 24px;
-  margin-left: 24px;
+  /* margin-left: 24px; */
   font-size: 72px;
   font-family: 'Londrina Shadow', cursive;
 }
 
 .body{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* justify-content: space-evenly; */
-  margin-left: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
 }
 
 .desc{
   margin-top: 48px;
   margin-left: 42px;
-  font-size: 40px;
+  font-size: 25px;
   line-height: 1;
+  /* margin-left: 24px; */
   /* width: 50%; */
 
 }
@@ -125,6 +126,7 @@ img{
   margin-left: 12px;
 }
 .switch {
+  float: right;
   position: relative;
   display: inline-block;
   width: 60px;
@@ -190,8 +192,13 @@ input:checked + .slider:before {
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
 
-  body{
-    overflow: hidden;
+  .body{
+    margin-left: 24px;
+  }
+
+  .body{
+    display: flex;
+    flex-direction: column;
   }
   .dark{
     max-width: 100%;
@@ -199,7 +206,7 @@ input:checked + .slider:before {
     overflow: hidden;
     position: fixed;
     /* object-fit: contain; */
-    padding: 2% 2% 15% 2%;
+    padding: 2% 2% 100vh 2%;
   }
 
   .light{
@@ -210,10 +217,15 @@ input:checked + .slider:before {
     /* object-fit: contain; */
   }
 
-  .top {
+  .left {
     display: flex;
     align-content: center;
-    grid-template-columns: 1fr 1fr;
+  }
+
+  .right{
+    display: block;
+    align-self: center;
+    /* float: inline-end; */
   }
 
   .title{
@@ -262,5 +274,10 @@ input:checked + .slider:before {
     color:whitesmoke;
     border: 1px solid #ffffff;
     margin-left: 245px;
+  }
+
+  .switch{
+    display: inline-block;
+    /* float: left; */
   }
 }
